@@ -70,7 +70,7 @@ IFS=$'\r\n'
 con=1;
 for URL in $(cat $list); do
 	fast=$(expr $con % $threads);
-	if [[ $fas == 0 && $con > 0 ]]; then
+	if [[ $fast == 0 && $con > 0 ]]; then
 		sleep 3
 	fi
 	shell_checker &
